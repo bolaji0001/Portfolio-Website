@@ -9,6 +9,12 @@
 # Production
 /build
 
+# React-related (if using vanilla version, these can be ignored)
+/src
+/public
+package-lock.json
+package.json
+
 # Misc
 .DS_Store
 .env.local
