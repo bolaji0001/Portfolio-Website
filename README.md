@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my web development projects an
 
 ## 🌐 Live Demo
 
-[Add your live portfolio URL here after deploying to GitHub Pages]
+[View Live Portfolio](https://bolaji0001.github.io/Portfolio-Website/)
 
 ## ✨ Features
 
