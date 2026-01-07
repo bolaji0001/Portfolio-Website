@@ -619,13 +619,8 @@ section {
 /* Make project links visible on touch devices when in viewport */
 @media (hover: none), (pointer: coarse) {
     .project-card.in-viewport .project-overlay {
-        align-items: flex-end;
-        background: linear-gradient(
-            to top,
-            rgba(99, 102, 241, 0.92) 0%,
-            rgba(99, 102, 241, 0.35) 55%,
-            rgba(99, 102, 241, 0) 100%
-        );
+        align-items: center;
+        background: rgba(99, 102, 241, 0.9);
         padding: 1rem;
     }
 
