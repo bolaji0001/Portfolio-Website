@@ -610,6 +610,33 @@ section {
     pointer-events: auto;
 }
 
+/* Make project links visible on touch devices (no hover) */
+@media (hover: none), (pointer: coarse) {
+    .project-overlay {
+        opacity: 1;
+        pointer-events: auto;
+        align-items: flex-end;
+        background: linear-gradient(
+            to top,
+            rgba(99, 102, 241, 0.92) 0%,
+            rgba(99, 102, 241, 0.35) 55%,
+            rgba(99, 102, 241, 0) 100%
+        );
+        padding: 1rem;
+    }
+
+    .project-link {
+        padding: 0.65rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Keyboard accessibility: show overlay when links are focused */
+.project-card:focus-within .project-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .project-link {
     padding: 0.75rem 1.5rem;
     background: white;
