@@ -121,7 +121,55 @@ const renderProjects = () => {
 // Initialize projects on page load
 document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
+    observeProjectCards();
 });
+
+// ============================================
+// Intersection Observer for Project Cards
+// ============================================
+const observeProjectCards = () => {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    if (!projectCards.length) return;
+
+    // Check if device supports hover (desktop) or not (mobile/touch)
+    const isTouchDevice = window.matchMedia('(hover: none)').matches || 
+                         window.matchMedia('(pointer: coarse)').matches;
+
+    // Only use observer on touch devices for better UX
+    if (!isTouchDevice) return;
+
+    const observerOptions = {
+        root: null, // viewport
+        rootMargin: '0px 0px -20% 0px', // Trigger slightly before card fully enters
+        threshold: [0.1, 0.2, 0.3, 0.5] // Multiple thresholds for smoother transitions
+    };
+
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Card is in viewport - show overlay
+                entry.target.classList.add('in-viewport');
+            } else {
+                // Only remove when card is significantly out of view
+                // This keeps overlay visible when scrolling between cards
+                if (entry.intersectionRatio < 0.1) {
+                    entry.target.classList.remove('in-viewport');
+                }
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe all project cards
+    projectCards.forEach(card => {
+        observer.observe(card);
+    });
+
+    // Optionally unobserve after first interaction to improve performance
+    // But for now, we'll keep observing for smooth transitions
+};
 
 // ============================================
 // Mobile Navigation Toggle

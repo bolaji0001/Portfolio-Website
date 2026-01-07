@@ -610,11 +610,15 @@ section {
     pointer-events: auto;
 }
 
-/* Make project links visible on touch devices (no hover) */
+/* Show overlay when card is in viewport (for mobile/touch devices using Intersection Observer) */
+.project-card.in-viewport .project-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Make project links visible on touch devices when in viewport */
 @media (hover: none), (pointer: coarse) {
-    .project-overlay {
-        opacity: 1;
-        pointer-events: auto;
+    .project-card.in-viewport .project-overlay {
         align-items: flex-end;
         background: linear-gradient(
             to top,
@@ -625,7 +629,7 @@ section {
         padding: 1rem;
     }
 
-    .project-link {
+    .project-card.in-viewport .project-link {
         padding: 0.65rem 1rem;
         font-size: 0.95rem;
     }
