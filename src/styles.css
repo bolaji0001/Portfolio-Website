@@ -122,6 +122,9 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 .bar {
@@ -991,6 +994,74 @@ section {
     section {
         padding: 4rem 0;
     }
+}
+
+/* ============================================
+   React extras (ported from former script.js)
+   ============================================ */
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+button.btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.toast {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: #10b981;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    z-index: 10000;
+    animation: slideIn 0.3s ease-out;
+}
+
+.toast.hiding {
+    animation: slideOut 0.3s ease-out;
 }
 
 
