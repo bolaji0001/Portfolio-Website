@@ -62,4 +62,22 @@ export const projectsData = [
     codeUrl: 'https://github.com/bolaji0001/Omnifood',
     image: null,
   },
+  {
+    title: 'Omnifood',
+    description:
+      'A modern landing page for a healthy meal delivery subscription service. Features smooth scroll navigation, responsive design with optimized images, and advanced CSS techniques including pseudo-elements and performance optimization.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    liveUrl: 'https://bolaji0001.github.io/Omnifood/',
+    codeUrl: 'https://github.com/bolaji0001/Omnifood',
+    image: null,
+  },
+  {
+    title: 'Forkify Recipe App',
+    description:
+      'A recipe search app with custom recipe uploads. Search over a million recipes, view ingredients and cooking details, bookmark favorites, and upload your own recipes. Built with JavaScript modules, Sass, and Parcel.',
+    tags: ['JavaScript', 'Sass', 'Parcel'],
+    liveUrl: 'https://recipe-website-kehinde.netlify.app/',
+    codeUrl: 'https://github.com/bolaji0001/recipes-project-kehinde',
+    image: null,
+  },
 ];
