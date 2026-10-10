@@ -80,4 +80,12 @@ export const projectsData = [
     codeUrl: 'https://github.com/bolaji0001/recipes-project-kehinde',
     image: null,
   },
+  {
+    title: 'Nutri-Stacker',
+    description: 'Personalized meal plans from dietary goals, allergiesand macros. The LLM (Groq) drafts meals; FastAPI validates allergens before anything is stored in Supabase.',
+    tags: ['Python', 'Next.js', 'TypeScript', 'PostgreSQL', 'Pydantic', 'Groq LLM API'],
+    liveUrl: 'https://nutri-stacker.vercel.app/',
+    codeUrl: 'https://github.com/bolaji0001/nutri-stacker.git',
+    image: null,
+  }
 ];
