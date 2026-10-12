@@ -3,10 +3,10 @@ export const site = {
   role: 'JavaScript Developer',
   focus: 'Frontend Experience & Backend Focus',
   email: 'akinosikmobolaji@gmail.com',
-  phone: '+2347086286557',
-  location: 'Lagos, Nigeria',
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  phone: '+1 403 998 4237',
+  location: 'Alberta, Canada',
+  github: 'https://github.com/bolaji0001',
+  linkedin: 'https://www.linkedin.com/in/kehinde-akinosi-030251286/',
 };
 
 export const navLinks = [
@@ -18,9 +18,9 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { target: 50, label: 'Projects Completed' },
+  { target: 26, label: 'Projects Built' },
+  { target: 2, label: 'Full Stack Apps Deployed' },
   { target: 2, label: 'Years Experience' },
-  { target: 100, label: 'Happy Clients' },
 ];
 
 export const skillCategories = [

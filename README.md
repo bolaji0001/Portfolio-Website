@@ -120,8 +120,8 @@ You can also run the workflow by hand from the **Actions** tab (**Deploy to GitH
 ## Contact
 
 - **Email**: akinosikmobolaji@gmail.com
-- **Phone**: +2347086286557
-- **Location**: Lagos, Nigeria
+- **Phone**: +1 403 998 4237
+- **Location**: Alberta, Canada
 
 ## License
 
