@@ -27,12 +27,12 @@ function Hero() {
     <section id="home" className="hero" style={{ transform: `translateY(${offset}px)` }}>
       <div className="hero-container">
         <div className="hero-content">
-          <p className="hero-greeting">Hello, I'm a</p>
+          <p className="hero-greeting">Hello, I'm</p>
           <h1 className="hero-title">
-            <span className="gradient-text">{site.role}</span>
+            <span className="gradient-text">{site.name}</span>
           </h1>
           <p className="hero-subtitle">
-            {site.focus} - Building modern, responsive, and user-friendly web experiences
+            {site.role} in Calgary, building full-stack apps.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary" onClick={(event) => handleScrollClick(event, 'projects')}>

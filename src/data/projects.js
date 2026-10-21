@@ -1,5 +1,23 @@
 export const projectsData = [
   {
+    title: 'Family Travel Tracker',
+    description:
+      'A shared family travel map. Members sign in, create or join a family with an invite code, and record the countries they have visited. Built with Express, EJS, and PostgreSQL, with email login and Google sign-in.',
+    tags: ['Node.js', 'Express', 'PostgreSQL', 'EJS', 'Passport'],
+    liveUrl: 'https://family-travel-tracker-with-database.onrender.com/',
+    codeUrl: 'https://github.com/bolaji0001/Family-travel-tracker-with-database',
+    image: null,
+  },
+  {
+    title: 'Bitcoin Last Trading Price',
+    description:
+      'A small web app that shows Bitcoin’s latest trade price in USD. An Express server fetches the live ticker from the Blockchain.com API and renders it with EJS.',
+    tags: ['Node.js', 'Express', 'EJS', 'Axios'],
+    liveUrl: 'https://bitcoinlasttradingprice.onrender.com/',
+    codeUrl: 'https://github.com/bolaji0001/bitcoinLastTradingPrice',
+    image: null,
+  },
+  {
     title: 'FirstWebsite',
     description:
       'A beginner-friendly landing page showcasing fundamental frontend development skills. Built with pure HTML and CSS, featuring responsive design, float-based layouts, and interactive elements.',
@@ -51,15 +69,6 @@ export const projectsData = [
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     liveUrl: 'https://bolaji0001.github.io/simply-recipes/index.html',
     codeUrl: 'https://github.com/bolaji0001/simply-recipes',
-    image: null,
-  },
-  {
-    title: 'Omnifood',
-    description:
-      'A modern landing page for a healthy meal delivery subscription service. Features smooth scroll navigation, responsive design with optimized images, and advanced CSS techniques including pseudo-elements and performance optimization.',
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
-    liveUrl: 'https://bolaji0001.github.io/Omnifood/',
-    codeUrl: 'https://github.com/bolaji0001/Omnifood',
     image: null,
   },
   {

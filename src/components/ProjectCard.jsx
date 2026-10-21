@@ -59,7 +59,11 @@ function ProjectCard({ project }) {
           )}
         </div>
         {project.image ? (
-          <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <img
+            src={project.image}
+            alt={`${project.title} preview`}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         ) : (
           <div className="project-placeholder">
             <svg width="100" height="100" viewBox="0 0 100 100" aria-hidden="true">

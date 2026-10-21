@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { site } from '../data/site.js';
 import FadeSection from './FadeSection.jsx';
-import { EmailIcon, LocationIcon, PhoneIcon } from './Icons.jsx';
+import { EmailIcon, GitHubIcon, LinkedInIcon, LocationIcon, PhoneIcon } from './Icons.jsx';
 
 const initialForm = {
   name: '',
@@ -77,6 +77,33 @@ function Contact() {
                 <div>
                   <h3>Location</h3>
                   <p>{site.location}</p>
+                  <p>{site.relocation}</p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <div className="contact-icon">
+                  <GitHubIcon />
+                </div>
+                <div>
+                  <h3>GitHub</h3>
+                  <p>
+                    <a href={site.github} target="_blank" rel="noopener noreferrer">
+                      github.com/bolaji0001
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <div className="contact-icon">
+                  <LinkedInIcon />
+                </div>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p>
+                    <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
+                      kehinde-akinosi
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>

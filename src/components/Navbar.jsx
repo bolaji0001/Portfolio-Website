@@ -53,6 +53,16 @@ function Navbar() {
               </a>
             </li>
           ))}
+          <li className="nav-item">
+            <a
+              className="nav-link"
+              href={`${import.meta.env.BASE_URL}Kehinde_Akinosi_Main_Tech_CV.pdf`}
+              download="Kehinde_Akinosi_Main_Tech_CV.pdf"
+              onClick={() => setMenuOpen(false)}
+            >
+              CV
+            </a>
+          </li>
         </ul>
         <button
           type="button"

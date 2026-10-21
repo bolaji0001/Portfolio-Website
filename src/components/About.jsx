@@ -47,18 +47,21 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p className="about-intro">
-              Welcome to my web development journey! I'm a JavaScript Developer with two years of
-              frontend experience, now focusing on backend development.
+              I'm a junior developer with two years of web development and four years of IT support,
+              building full-stack apps.
             </p>
             <p>
-              My journey in web development started with frontend technologies - HTML, CSS, JavaScript,
-              and React. Over the past two years, I've built numerous frontend projects that showcase
-              my skills in creating beautiful, functional, and user-friendly web applications.
+              Those two years of web development are spent building full-stack apps, from the interface
+              through the API to the database. I care about software that is clear to use and solid
+              behind the scenes.
             </p>
             <p>
-              While I've enjoyed working on the frontend, I'm now shifting my focus toward backend
-              development. I'm passionate about building robust server-side applications, APIs, and
-              understanding the full stack of web development.
+              Four years of IT support taught me how to troubleshoot, explain a problem plainly, and
+              keep people working. I bring that same approach to the apps I build.
+            </p>
+            <p className="about-now">
+              <span className="about-now-label">What I'm doing now:</span> preparing for the AWS
+              Certified Cloud Practitioner exam, and building an e-commerce app.
             </p>
             <div className="about-stats">
               {stats.map((stat) => (
@@ -67,7 +70,7 @@ function About() {
             </div>
           </div>
           <div className="about-image">
-            <img src={profileSrc} alt={site.name} className="profile-image" />
+            <img src={profileSrc} alt={`Portrait of ${site.name}`} className="profile-image" />
           </div>
         </div>
       </div>
