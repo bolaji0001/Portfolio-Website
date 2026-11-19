@@ -32,7 +32,7 @@ function Hero() {
             <span className="gradient-text">{site.name}</span>
           </h1>
           <p className="hero-subtitle">
-            {site.role} in Calgary, building full-stack apps.
+            {site.role} in Calgary, open to relocation.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary" onClick={(event) => handleScrollClick(event, 'projects')}>
@@ -77,10 +77,10 @@ function Hero() {
                   <span className="code-string">'{site.focus}'</span>,{'\n'}
                   {'  '}
                   <span className="code-property">skills</span>: [
-                  <span className="code-string">'HTML'</span>,{' '}
-                  <span className="code-string">'CSS'</span>,{' '}
-                  <span className="code-string">'JavaScript'</span>,{' '}
-                  <span className="code-string">'React'</span>]{'\n'}
+                  <span className="code-string">'TypeScript'</span>,{' '}
+                  <span className="code-string">'React'</span>,{' '}
+                  <span className="code-string">'Node.js'</span>,{' '}
+                  <span className="code-string">'Python'</span>]{'\n'}
                   {'};'}
                 </code>
               </pre>

@@ -47,17 +47,18 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p className="about-intro">
-              I'm a junior developer with two years of web development and four years of IT support,
-              building full-stack apps.
+              I'm a full-stack software developer with over two years of professional experience
+              building and maintaining web applications in production, and four years in IT supporting
+              200+ users.
             </p>
             <p>
-              Those two years of web development are spent building full-stack apps, from the interface
-              through the API to the database. I care about software that is clear to use and solid
-              behind the scenes.
+              I build end to end with React, Next.js, TypeScript and JavaScript on the front end,
+              Node.js, Express and Python (FastAPI) on the back end, and PostgreSQL databases.
             </p>
             <p>
-              Four years of IT support taught me how to troubleshoot, explain a problem plainly, and
-              keep people working. I bring that same approach to the apps I build.
+              I care about correctness and security: validating input, keeping user data safe, and
+              treating external and AI services as untrusted. I'm based in Calgary and open to
+              relocation.
             </p>
             <p className="about-now">
               <span className="about-now-label">What I'm doing now:</span> preparing for the AWS

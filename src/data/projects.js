@@ -1,100 +1,38 @@
 export const projectsData = [
   {
+    title: 'E-commerce Store (in progress)',
+    description:
+      'A full-stack online store with a React and TypeScript front end on Vercel and an Express REST API on Render, backed by PostgreSQL. Orders are created in a database transaction with rollback on failure, prices come only from the database, and stock oversells are rejected. The API uses bcrypt, role-based JWTs, Zod validation, rate limiting, security headers, and a CORS allow-list. Stripe Checkout is next.',
+    tags: ['TypeScript', 'React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'PostgreSQL', 'Zod', 'JWT', 'Docker Compose'],
+    liveUrl: null,
+    codeUrl: 'https://github.com/bolaji0001/e-commerce-app',
+    image: null,
+  },
+  {
+    title: 'NutriStacker: AI Meal Planner',
+    description:
+      'A full-stack meal planner: a Next.js and TypeScript front end calls a Python FastAPI REST API that stores plans in PostgreSQL. LLM output is treated as untrusted, validated with Pydantic, checked against allergies, retried up to three times, and logged on failure. Requests are secured with JWT verification and row-level security. pytest covers the API and allergen logic, and GitHub Actions type-checks, tests, builds, and images the app on every push.',
+    tags: ['Python', 'FastAPI', 'Pydantic', 'Next.js', 'TypeScript', 'PostgreSQL', 'Groq LLM', 'pytest', 'Docker', 'GitHub Actions'],
+    liveUrl: 'https://nutri-stacker.vercel.app/',
+    codeUrl: 'https://github.com/bolaji0001/nutri-stacker',
+    image: null,
+  },
+  {
     title: 'Family Travel Tracker',
     description:
-      'A shared family travel map. Members sign in, create or join a family with an invite code, and record the countries they have visited. Built with Express, EJS, and PostgreSQL, with email login and Google sign-in.',
-    tags: ['Node.js', 'Express', 'PostgreSQL', 'EJS', 'Passport'],
+      'A multi-user web app with password and Google sign-in that colours each family member’s visited countries on an interactive world map. A relational schema keeps each family’s data separate. Deployed on Render with Neon PostgreSQL.',
+    tags: ['Node.js', 'Express', 'PostgreSQL', 'Passport.js', 'Google OAuth', 'bcrypt'],
     liveUrl: 'https://family-travel-tracker-with-database.onrender.com/',
     codeUrl: 'https://github.com/bolaji0001/Family-travel-tracker-with-database',
     image: null,
   },
   {
-    title: 'Bitcoin Last Trading Price',
+    title: 'Mapty: Workout Mapping App',
     description:
-      'A small web app that shows Bitcoin’s latest trade price in USD. An Express server fetches the live ticker from the Blockchain.com API and renders it with EJS.',
-    tags: ['Node.js', 'Express', 'EJS', 'Axios'],
-    liveUrl: 'https://bitcoinlasttradingprice.onrender.com/',
-    codeUrl: 'https://github.com/bolaji0001/bitcoinLastTradingPrice',
+      'An interactive map app built with ES6 classes and inheritance. Users log workouts by clicking a Leaflet map centred on their location, with data saved in localStorage.',
+    tags: ['JavaScript (ES6)', 'OOP', 'Leaflet', 'OpenStreetMap', 'Geolocation API'],
+    liveUrl: 'https://bolaji0001.github.io/mapty/',
+    codeUrl: 'https://github.com/bolaji0001/mapty',
     image: null,
   },
-  {
-    title: 'FirstWebsite',
-    description:
-      'A beginner-friendly landing page showcasing fundamental frontend development skills. Built with pure HTML and CSS, featuring responsive design, float-based layouts, and interactive elements.',
-    tags: ['HTML5', 'CSS3'],
-    liveUrl: 'https://bolaji0001.github.io/FirstWebsite/',
-    codeUrl: 'https://github.com/bolaji0001/FirstWebsite',
-    image: null,
-  },
-  {
-    title: 'My First Website Practice',
-    description:
-      'A practice website showcasing CSS techniques including linear gradients and image scaling effects on hover. Features interactive navigation, button animations using pseudo-classes, and a JavaScript hamburger menu toggle.',
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
-    liveUrl: 'https://bolaji0001.github.io/MyFirstWebPractice/',
-    codeUrl: 'https://github.com/bolaji0001/MyFirstWebPractice',
-    image: null,
-  },
-  {
-    title: 'My Scrollable Website',
-    description:
-      'A single-page website featuring smooth scroll navigation and dynamic link highlighting. Uses JavaScript to transition to sections when navbar links are clicked and highlights the active section link as users scroll.',
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
-    liveUrl: 'https://bolaji0001.github.io/FirstScrollableWebsite/#home',
-    codeUrl: 'https://github.com/bolaji0001/FirstScrollableWebsite',
-    image: null,
-  },
-  {
-    title: 'My First Bootstrap Website',
-    description:
-      "A responsive travel destination website built primarily with Bootstrap 5. Showcases Bootstrap's grid system, components, and utilities for creating modern, mobile-first layouts.",
-    tags: ['Bootstrap 5', 'HTML5', 'CSS3'],
-    liveUrl: 'https://bolaji0001.github.io/FirstBootstrapRepo/index.html/',
-    codeUrl: 'https://github.com/bolaji0001/FirstBootstrapRepo',
-    image: null,
-  },
-  {
-    title: 'Bento-Grid',
-    description:
-      'A modern bento box-style layout built with CSS Grid, featuring unequal-sized rows and columns. Demonstrates advanced grid properties including grid-auto-columns, grid-auto-rows, and responsive reordering.',
-    tags: ['HTML5', 'CSS3'],
-    liveUrl: 'https://bolaji0001.github.io/bento-grid/bento-grid-main/',
-    codeUrl: 'https://github.com/bolaji0001/bento-grid',
-    image: null,
-  },
-  {
-    title: 'Simply Recipes',
-    description:
-      'A multi-page recipe website featuring various food recipes. Built with organized CSS stylesheets using :root for custom properties, featuring responsive design and JavaScript for dynamic year updates.',
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
-    liveUrl: 'https://bolaji0001.github.io/simply-recipes/index.html',
-    codeUrl: 'https://github.com/bolaji0001/simply-recipes',
-    image: null,
-  },
-  {
-    title: 'Omnifood',
-    description:
-      'A modern landing page for a healthy meal delivery subscription service. Features smooth scroll navigation, responsive design with optimized images, and advanced CSS techniques including pseudo-elements and performance optimization.',
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
-    liveUrl: 'https://bolaji0001.github.io/Omnifood/',
-    codeUrl: 'https://github.com/bolaji0001/Omnifood',
-    image: null,
-  },
-  {
-    title: 'Forkify Recipe App',
-    description:
-      'A recipe search app with custom recipe uploads. Search over a million recipes, view ingredients and cooking details, bookmark favorites, and upload your own recipes. Built with JavaScript modules, Sass, and Parcel.',
-    tags: ['JavaScript', 'Sass', 'Parcel'],
-    liveUrl: 'https://recipe-website-kehinde.netlify.app/',
-    codeUrl: 'https://github.com/bolaji0001/recipes-project-kehinde',
-    image: null,
-  },
-  {
-    title: 'Nutri-Stacker',
-    description: 'Personalized meal plans from dietary goals, allergiesand macros. The LLM (Groq) drafts meals; FastAPI validates allergens before anything is stored in Supabase.',
-    tags: ['Python', 'Next.js', 'TypeScript', 'PostgreSQL', 'Pydantic', 'Groq LLM API'],
-    liveUrl: 'https://nutri-stacker.vercel.app/',
-    codeUrl: 'https://github.com/bolaji0001/nutri-stacker.git',
-    image: null,
-  }
 ];

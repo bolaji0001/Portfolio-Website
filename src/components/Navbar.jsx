@@ -56,8 +56,8 @@ function Navbar() {
           <li className="nav-item">
             <a
               className="nav-link"
-              href={`${import.meta.env.BASE_URL}Kehinde_Akinosi_Main_Tech_CV.pdf`}
-              download="Kehinde_Akinosi_Main_Tech_CV.pdf"
+              href={`${import.meta.env.BASE_URL}Kehinde-Akinosi-CV-General.pdf`}
+              download="Kehinde-Akinosi-CV-General.pdf"
               onClick={() => setMenuOpen(false)}
             >
               CV

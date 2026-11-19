@@ -1,7 +1,7 @@
 export const site = {
   name: 'Akinosi Kehinde',
-  role: 'Junior Software Developer',
-  focus: 'Full-stack apps',
+  role: 'Full-Stack Software Developer',
+  focus: 'React, Node.js, and Python',
   email: 'akinosikmobolaji@gmail.com',
   phone: '+1 403 998 4237',
   location: 'Calgary, Canada',
@@ -20,69 +20,99 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { target: 10, label: 'Projects' },
+  { target: 4, label: 'Featured Projects' },
   { target: 2, label: 'Full-Stack Apps Deployed' },
   { target: 2, label: "Years' Experience" },
 ];
 
 export const education = [
   {
-    title: 'Bachelor of Sociology',
-    detail: 'Covenant University, 2020',
-  },
-  {
-    title: 'National Diploma, Mass Communication',
-    detail: 'The Kings Polytechnic, 2022',
-  },
-  {
     title: 'AWS Certified Cloud Practitioner',
     detail: 'Exam in preparation',
   },
   {
-    title: 'Full-Stack Web Development Bootcamp',
-    detail: 'Angela Yu, Udemy, 2026',
+    title: 'React — The Complete Guide, including Next.js and Redux',
+    detail: 'Maximilian Schwarzmüller, Udemy, completed October 2026',
   },
   {
-    title: 'React: The Complete Guide',
-    detail: 'Schwarzmuller, Udemy',
+    title: 'The Complete Full-Stack Web Development Bootcamp',
+    detail: 'Dr. Angela Yu, Udemy, 2026',
   },
   {
-    title: 'The Complete JavaScript Course 2025',
-    detail: 'Schmedtmann, Udemy',
+    title: 'The Complete JavaScript Course',
+    detail: 'Jonas Schmedtmann, Udemy, 2025',
+  },
+  {
+    title: 'National Diploma, Mass Communication',
+    detail: 'Kings Polytechnic, 2022',
+  },
+  {
+    title: 'Bachelor of Science, Sociology',
+    detail: 'Covenant University, 2020',
   },
 ];
 
 export const skillCategories = [
   {
     title: 'Languages',
-    skills: ['Python', 'JavaScript', 'TypeScript', 'SQL', 'HTML5', 'CSS3'],
+    skills: ['JavaScript (ES6+)', 'TypeScript', 'Python', 'SQL', 'HTML5', 'CSS3'],
   },
   {
-    title: 'Backend and APIs',
-    skills: ['FastAPI', 'Pydantic', 'Node.js', 'Express', 'REST APIs', 'JWT', 'OAuth 2.0'],
+    title: 'Front-End',
+    skills: ['React', 'Next.js', 'Tailwind CSS', 'Bootstrap', 'Responsive design', 'React Router', 'Leaflet'],
   },
   {
-    title: 'Frontend',
-    skills: ['React', 'Next.js', 'Tailwind CSS', 'Sass', 'Responsive design'],
-  },
-  {
-    title: 'Databases and Hosting',
-    skills: ['PostgreSQL', 'MongoDB', 'Supabase', 'Neon', 'Render', 'Vercel'],
-  },
-  {
-    title: 'Tools and Practices',
+    title: 'Back-End and APIs',
     skills: [
-      'Git/GitHub',
-      'GitHub Actions',
-      'Docker (basic)',
-      'Manual testing',
-      'Debugging',
-      'Code review',
-      'SEO',
+      'Node.js',
+      'Express',
+      'FastAPI',
+      'REST APIs',
+      'JWT',
+      'OAuth 2.0',
+      'Passport.js',
+      'bcrypt',
+      'Zod',
+      'Pydantic',
     ],
   },
   {
-    title: 'Learning',
-    skills: ['AWS (Cloud Practitioner exam prep)'],
+    title: 'Databases',
+    skills: [
+      'PostgreSQL',
+      'SQL joins and aggregation',
+      'Transactions',
+      'Schema design',
+      'Indexing',
+      'Row-level security',
+      'Supabase',
+      'Neon',
+      'MongoDB',
+    ],
+  },
+  {
+    title: 'Testing and Quality',
+    skills: ['pytest', 'Tests in CI', 'Debugging production issues', 'Cross-browser testing', 'Code review'],
+  },
+  {
+    title: 'DevOps and Cloud',
+    skills: [
+      'Git/GitHub',
+      'Pull requests',
+      'GitHub Actions',
+      'Docker',
+      'Docker Compose',
+      'Vercel',
+      'Render',
+      'Secrets management',
+    ],
+  },
+  {
+    title: 'AI',
+    skills: ['Groq LLM APIs', 'Schema-validated JSON', 'Cursor'],
+  },
+  {
+    title: 'Practices',
+    skills: ['Agile', 'SDLC', 'OOP', 'Technical documentation', 'Jira (familiar)', 'Microsoft 365'],
   },
 ];
